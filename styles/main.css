@@ -7,7 +7,9 @@ input,
 textarea {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 27px; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -151,6 +153,10 @@ h1 {
   line-height: 30px;
   color: #0075ff; }
 
+@media screen and (max-width: 804px) {
+  .section {
+    margin-top: 0; } }
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +174,22 @@ h1 {
     margin: 0; }
   .info__text {
     max-width: 500px; }
+    .info__text > :last-child {
+      margin-bottom: 0; }
+
+@media screen and (max-width: 804px) {
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .info__title {
+      font-size: 36px;
+      line-height: 36px;
+      margin-top: 64px; } }
 
 body {
   background: #eee; }
@@ -178,8 +200,5 @@ body {
   max-width: 1060px;
   padding: 0 20px;
   margin: 0 auto; }
-
-.main {
-  margin-top: 104px; }
 
 /*# sourceMappingURL=main.css.map */
