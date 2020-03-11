@@ -145,7 +145,6 @@ h1 {
   color: #0075ff; }
 
 .sub-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -160,7 +159,6 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .info__title {
-    font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
