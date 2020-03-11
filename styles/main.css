@@ -1,4 +1,10 @@
-html, body, ul, li, button, input, textarea {
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea {
   margin: 0;
   padding: 0;
   font-family: "Roboto"; }
@@ -160,7 +166,7 @@ h1 {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -1.5px;
-    color: #000000;
+    color: #000;
     margin: 0; }
   .info__text {
     max-width: 500px; }
