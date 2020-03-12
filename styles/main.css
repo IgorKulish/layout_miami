@@ -208,7 +208,7 @@ h1 {
     height: 16px;
     margin: auto;
     margin-top: 7px;
-    background-image: url("images/crown.svg");
+    background-image: url("../images/crown.svg");
     background-repeat: no-repeat; }
   .heading__crown--gallery {
     margin-bottom: 38px; }
@@ -460,7 +460,7 @@ h1 {
 .footer {
   position: relative;
   height: 360px;
-  background-image: url("images/footer.jpg");
+  background-image: url("../images/footer.jpg");
   background-size: cover;
   background-position: center; }
   .footer__logo {
