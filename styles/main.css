@@ -220,10 +220,9 @@ h1 {
 .section {
   margin-top: 104px;
   margin-bottom: 152px; }
-
-@media screen and (max-width: 879px) {
-  .section {
-    margin-top: 0; } }
+  @media screen and (max-width: 879px) {
+    .section .section {
+      margin-top: 0; } }
 
 .info {
   display: -webkit-box;
