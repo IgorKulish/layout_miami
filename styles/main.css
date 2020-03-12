@@ -181,7 +181,11 @@ h1 {
       font-size: 36px;
       line-height: 36px;
       margin-top: 64px;
-      margin-bottom: 48px; } }
+      margin-bottom: 48px; }
+    .info__content,
+    .info .sub-title,
+    .info .info__title--info {
+      text-align: center; } }
 
 .heading {
   font-style: normal;
@@ -195,7 +199,7 @@ h1 {
   width: -moz-max-content;
   width: max-content;
   margin: auto; }
-  .heading__crown--gallery, .heading__crown--consultation, .heading__crown--testimonials {
+  .heading__crown--gallery, .heading__crown--contact, .heading__crown--consultation, .heading__crown--testimonials {
     display: block;
     position: relative;
     left: 0;
@@ -204,14 +208,18 @@ h1 {
     height: 16px;
     margin: auto;
     margin-top: 7px;
-    margin-bottom: 38px;
     background-image: url("/images/crown.svg");
     background-repeat: no-repeat; }
-
-@media screen and (max-width: 804px) {
   .heading__crown--gallery {
     margin-bottom: 38px; }
-  .heading__crown--consultation {
+  .heading__crown--contact, .heading__crown--consultation, .heading__crown--testimonials {
+    margin-bottom: 70px; }
+
+@media screen and (max-width: 804px) {
+  .heading__crown--gallery,
+  .heading__crown--consultation,
+  .heading__crown--testimonials,
+  .heading__crown--contact {
     margin-bottom: 30px; } }
 
 .photos {
@@ -233,11 +241,14 @@ h1 {
 .photos--wide-right {
   grid-template-columns: 1fr 2fr; }
 
-@media screen and (max-width: 804px) {
+@media screen and (max-width: 330px) {
   .photos,
   .photos--wide-left,
   .photos--wide-right {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .photos__img,
     .photos--wide-left__img,
     .photos--wide-right__img {
@@ -297,13 +308,14 @@ h1 {
   line-height: 14px;
   color: #fff;
   background-color: #0075ff;
-  border: 2px solid #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
   cursor: pointer;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 6px 23px rgba(0, 117, 255, 0.46);
+          box-shadow: 0px 6px 23px rgba(0, 117, 255, 0.46); }
   .form__button:hover {
     color: #0075ff;
     background-color: #fff;
@@ -328,7 +340,8 @@ h1 {
         -ms-flex-direction: column;
             flex-direction: column; }
     .consultation__text, .consultation__form {
-      width: 100%; } }
+      width: 100%;
+      text-align: center; } }
 
 .form {
   display: -webkit-box;
@@ -359,6 +372,21 @@ h1 {
   .input::-ms-input-placeholder {
     color: #b9c1ce; }
   .input::placeholder {
+    color: #b9c1ce; }
+
+.input__textarea {
+  height: 144px;
+  padding-top: 17px;
+  margin-bottom: 32px; }
+  .input__textarea::-webkit-input-placeholder {
+    color: #b9c1ce; }
+  .input__textarea::-moz-placeholder {
+    color: #b9c1ce; }
+  .input__textarea:-ms-input-placeholder {
+    color: #b9c1ce; }
+  .input__textarea::-ms-input-placeholder {
+    color: #b9c1ce; }
+  .input__textarea::placeholder {
     color: #b9c1ce; }
 
 .testimonials {
@@ -394,6 +422,53 @@ h1 {
     line-height: 27px; }
   .person__text {
     margin-top: 2px; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 108px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .contact__title {
+    font-size: 14px;
+    line-height: 27px;
+    color: #9fadc2;
+    margin-top: 0;
+    margin-bottom: 4px; }
+  .contact__text {
+    font-size: 16px;
+    line-height: 27px;
+    color: #3e3e3e;
+    margin-top: 4px;
+    margin-bottom: 24px; }
+  .contact__form {
+    width: 413px; }
+
+@media screen and (max-width: 804px) {
+  .contact {
+    grid-template-columns: 280px;
+    grid-gap: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contact__form, .contact__item {
+      width: 100%; }
+    .contact__form {
+      margin-top: 8px; } }
+
+.footer {
+  position: relative;
+  height: 360px;
+  background-image: url("/images/footer.jpg");
+  background-size: cover;
+  background-position: center; }
+  .footer__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 40px; }
 
 body {
   background: white; }
