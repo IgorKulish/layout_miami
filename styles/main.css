@@ -370,10 +370,14 @@ h1 {
   border-radius: 8px;
   cursor: pointer;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  outline: none; }
   .gallery__button:hover {
     color: #fff;
-    background-color: #0075ff; }
+    background-color: #0075ff;
+    border: 2px solid #0075ff; }
+  .gallery__button:focus {
+    border: 2px solid #0075ff; }
 
 .form__button {
   display: block;
@@ -392,12 +396,15 @@ h1 {
   transition: 0.3s;
   -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
           box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-  border: 2px solid #0075ff; }
+  border: 2px solid #0075ff;
+  outline: none; }
   .form__button:hover {
     color: #0075ff;
     background-color: #fff;
     border: 2px solid #0075ff;
     outline: 0; }
+  .form__button:focus {
+    border: 2px solid #0075ff; }
 
 .consultation {
   display: -webkit-box;
