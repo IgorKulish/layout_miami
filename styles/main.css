@@ -572,7 +572,8 @@ a {
   outline: none; }
   a.nav__link:focus {
     border: 2px solid #fff;
-    border-radius: 4px; }
+    border-radius: 4px;
+    padding: 4px; }
   a:focus {
     border: 1px solid #0075ff;
     border-radius: 4px; }
