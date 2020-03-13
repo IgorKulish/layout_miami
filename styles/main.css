@@ -567,7 +567,12 @@ body {
 a {
   color: #0075ff;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+  border: 0;
+  outline: none; }
+  a:focus {
+    border: 1px solid #0075ff;
+    border-radius: 4px; }
 
 .container {
   -webkit-box-sizing: border-box;
